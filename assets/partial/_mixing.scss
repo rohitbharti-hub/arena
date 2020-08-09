@@ -1,0 +1,65 @@
+// border
+
+@mixin apply-border ($color, $radius){
+    border: 1px solid $color;
+    border-radius: $radius;
+}
+
+//transition
+
+@mixin transition-all {
+    transition: all 0.3 linear;
+    -moz-transition: all 0.3 linear;
+    -o-transition: all 0.3 linear;
+    -webkit-transition: all 0.3 linear;
+}
+
+//display-flex
+
+@mixin display-flex-center-justify {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@mixin display-flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+//margin-padding-0
+
+@mixin m-p-0 {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin paddings($top, $right, $bottom, $left) {
+    padding: $top, $right, $bottom, $left;
+   } 
+
+@mixin margins($top, $right, $bottom, $left) {
+    padding: $top, $right, $bottom, $left;
+   } 
+
+//box-shadow
+@mixin box-shadow($horizontal-offset, $vertical-offset, $blur-radius, $spread-radius, $box-color) {
+   box-shadow : $horizontal-offset, $vertical-offset, $blur-radius, $spread-radius, $box-color;
+   -webkit-box-shadow: $horizontal-offset, $vertical-offset, $blur-radius, $spread-radius, $box-color;
+   } 
+
+   @mixin box_shadow($shadows...) {
+    box-shadow: $shadows;
+   } 
+   
+   
