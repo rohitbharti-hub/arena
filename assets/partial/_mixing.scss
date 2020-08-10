@@ -8,10 +8,10 @@
 //transition
 
 @mixin transition-all {
-    transition: all 0.3 linear;
-    -moz-transition: all 0.3 linear;
-    -o-transition: all 0.3 linear;
-    -webkit-transition: all 0.3 linear;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
 }
 
 //display-flex
